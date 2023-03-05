@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ZonaBlack;
+  src: url(./font/Zona-Pro/ZonaPro-Black.otf);
+}
+
+@font-face {
+  font-family: Zona;
+  src: url(./font/Zona-Pro/ZonaPro-Bold.otf);
+}
+
+@font-face {
+  font-family: Rotunda;
+  src: url(./font/Rotunda/Rotunda-Bold.ttf);
+}
