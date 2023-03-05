@@ -1,20 +1,24 @@
-import React from 'react'
-
+/* eslint-disable arrow-body-style */
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import logo from '../../images/white-logo.png';
 
+import "./navbar.css";
+
+
 const navbar = () => {
-  return (
-    <nav class="w-full flex py-6 justify-between items-center navbar bg-[#7704ba] h-[140px]">
-        <a href="/"><img src={logo} alt="Ivyside" class="h-[140px]"/></a>
-        <li class="text-decoration-none">
-            <a class="-m-1.5 p-1.5">support</a>
-            <a>about us</a>
-        </li>
-    </nav>
 
+    return (
+        <nav className="navbar">
+        <a href="/"><img src={logo} className="app-logo" alt="logo" /></a>
+          <ul>
+            <li><a className="nav-button" href="/support">support</a></li>
+            <li><a className="nav-button" href="/about">about us</a></li>
+          </ul>
+      </nav>
+    );
 
-  )
-}
+};
 
-export default navbar
+export default navbar;
